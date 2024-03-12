@@ -67,6 +67,10 @@ main {
     white-space: nowrap;
 }
 
+#viewworkf, #viewcontactf {
+    display: none;
+}
+
 
 
 .linetwo p {
@@ -74,7 +78,7 @@ main {
 }
 
 .intro p {
-    font-size: 8vw;
+    font-size: 7.5vw;
 }
 
 .intro {
@@ -83,7 +87,7 @@ main {
 
 main .intro img {
     flex: 1;
-    height: 8vw;
+    height: 7.5vw;
     object-fit: cover;
     border-radius: 50px;
 }
@@ -93,12 +97,13 @@ main .intro img {
 }
 
 .introsummary {
+    
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     width: 50%;
     position: absolute;
-    top: 85vh;
+    top: 89vh;
     margin: 0 15%;
 }
 
@@ -124,9 +129,19 @@ button:hover {
 
 .introsummary button {
     margin: 5% 0;
-    max-width: 50%;
+    width: 100%;
+    margin-top: 5vh;
     padding: 20px 40px;
     font-size: 1.5rem;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
 }
 
 .gallery {
@@ -153,24 +168,62 @@ iframe {
     main .intro img {
         height: 11vw;
     }
+
+    .lineone p {
+        margin-left: 16px;
+    }
+
+    .linetwo p {
+        margin-right: 16px;
+    }
+
+    .introsummary p {
+        width: 70%;
+        margin: 0 auto;
+    }
 }
 
 @media screen and (max-width: 840px) {
+    .introsummary {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .navigation button {
+        width: 70%;
+    }
     .intro p {
-        font-size: 12vw;
+        font-size: 11vw;
     }
     main .intro img {
-        height: 12vw;
+        height: 11vw;
     }
 
     header nav {
         display: none;
     }
+
+    #viewworkf, #viewcontactf {
+        display: block;
+        margin-top: 3px;
+    }
+
+    
+    
 }
 
 @media screen and (max-width: 700px) {
     main {
-        padding: 0 5%;
+        padding: 0 15%;
     }
 
     iframe {
@@ -179,22 +232,41 @@ iframe {
     }
 
     header {
-        padding: 0 7%;
+        padding: 0 8%;
     }
-    .introsummary {
-        margin: 0 5%;
-        width: 70%;
+    /* .introsummary {
+        flex-direction: column-reverse;
+        /* margin: 0 8%; */
+        /* width: 70%; */
+    } */
+
+    .navigation {
+        gap: 0.00001rem;
     }
+
     .intro p {
-        font-size: 5rem;
+        font-size: 10vw;
+        
     }
     main .intro img {
-        height: 5rem;
+        height: 10vw;
     }
     .summary {
         font-size: 3rem;
     }
-}
+
+    .introsummary button {
+        font-size: 1.2rem;
+        padding: 10px 20px;
+    }
+
+    .lineone p {
+        margin-left: 15px;
+    }
+    .linetwo p {
+        margin-right: 15px;
+    }
+    
 
 @media screen and (max-width: 579px){
     main {
@@ -202,11 +274,10 @@ iframe {
     }
 
     .introsummary {
-        flex-direction: column-reverse;
         top: 60vh;
     }
     .intro p {
-        font-size: 3.5rem;
+        font-size: 11vw;
     }
 
     .lineone p {
@@ -217,7 +288,11 @@ iframe {
         margin-right: 6px;
     }
     main .intro img {
-        height: 3.5rem;
+        height: 11vw;
+    }
+
+    .navigation button{
+        width: 70%;
     }
 
     .summary {
