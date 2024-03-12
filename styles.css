@@ -138,6 +138,15 @@ button:hover {
 
 a {
     text-decoration: none;
+    color: black;
+}
+
+a button {
+    color: black;
+}
+
+a h1 {
+    color: black;
 }
 
 a:visited {
