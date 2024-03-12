@@ -8,8 +8,8 @@
 body {
     background-size: 40px 40px;
     background-image:
-      linear-gradient(to right, rgba(128, 128, 128, 0.05) 1px, transparent 1px),
-      linear-gradient(to bottom, rgba(128, 128, 128, 0.05) 1px, transparent 1px);
+      linear-gradient(to right, rgba(128, 128, 128, 0.08) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(128, 128, 128, 0.08) 1px, transparent 1px);
   }
 
 header {
@@ -78,7 +78,7 @@ main {
 }
 
 .intro p {
-    font-size: 7.5vw;
+    font-size: 9vw;
 }
 
 .intro {
@@ -87,7 +87,7 @@ main {
 
 main .intro img {
     flex: 1;
-    height: 7.5vw;
+    height: 9vw;
     object-fit: cover;
     border-radius: 50px;
 }
@@ -134,6 +134,7 @@ button:hover {
     padding: 20px 40px;
     font-size: 1.5rem;
     text-align: center;
+    color: black;
 }
 
 a {
@@ -191,7 +192,7 @@ iframe {
     }
 
     .introsummary p {
-        width: 70%;
+        width: 100%;
         margin: 0 auto;
     }
 }
@@ -214,6 +215,7 @@ iframe {
     .navigation button {
         width: 70%;
     }
+    
     .intro p {
         font-size: 11vw;
     }
@@ -230,13 +232,15 @@ iframe {
         margin-top: 3px;
     }
 
-    
+    .introsummary p {
+        font-size: 2.7rem;
+    }
     
 }
 
 @media screen and (max-width: 700px) {
     main {
-        padding: 0 15%;
+        padding: 0 12%;
     }
 
     iframe {
@@ -247,12 +251,7 @@ iframe {
     header {
         padding: 0 8%;
     }
-    /* .introsummary {
-        flex-direction: column-reverse;
-        /* margin: 0 8%; */
-        /* width: 70%; */
-    } */
-
+    
     .navigation {
         gap: 0.00001rem;
     }
@@ -268,6 +267,7 @@ iframe {
         font-size: 3rem;
     }
 
+
     .introsummary button {
         font-size: 1.2rem;
         padding: 10px 20px;
@@ -279,7 +279,7 @@ iframe {
     .linetwo p {
         margin-right: 15px;
     }
-    
+}
 
 @media screen and (max-width: 579px){
     main {
@@ -290,10 +290,11 @@ iframe {
         top: 60vh;
     }
     .intro p {
-        font-size: 11vw;
+        font-size: 12vw;
     }
 
     .lineone p {
+        display: flex;
         margin-left: 6px;
     }
 
@@ -301,7 +302,7 @@ iframe {
         margin-right: 6px;
     }
     main .intro img {
-        height: 11vw;
+        height: 12vw;
     }
 
     .navigation button{
@@ -309,10 +310,21 @@ iframe {
     }
 
     .summary {
-        font-size: 2rem;
+        font-size: 1.7rem;
+    }
+
+    .introsummary p {
+        padding: 0 12%;
+        font-size: 1.7rem;
     }
     iframe {
         padding: 0;
         padding-top: 60px;
+    }
+}
+
+@media screen and (max-height: 710px){
+    .intro {
+        margin-top: 40px;
     }
 }
