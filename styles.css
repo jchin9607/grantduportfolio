@@ -149,6 +149,10 @@ a h1 {
     color: black;
 }
 
+#viewportf, #viewworkf, #viewcontactf {
+    color: black;
+}
+
 a:visited {
     color: black;
 }
